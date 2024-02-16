@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RatingBookActivity">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <RadioButton
+            android:id="@+id/radGood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good Book " />
+
+        <RadioButton
+            android:id="@+id/radNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal Book" />
+
+        <RadioButton
+            android:id="@+id/radBad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bad book" />
+    </RadioGroup>
+
+    <Button
+        android:onClick="processVote"
+        android:id="@+id/btnVote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vote" />
+
+    <TextView
+        android:id="@+id/txtResultV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000" />
+
+    <ImageView
+        android:onClick="goBack"
+        android:id="@+id/imageView2"
+        android:layout_width="65dp"
+        android:layout_height="67dp"
+        app:srcCompat="@mipmap/ic_back" />
+
+</LinearLayout>
